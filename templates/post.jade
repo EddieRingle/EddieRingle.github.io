@@ -1,0 +1,23 @@
+extends ./layout.jade
+
+prepend head
+    title #{title} | #{site.title}
+
+append body
+    - var hasPrev = typeof(previous) !== 'undefined'
+    - var hasNext = typeof(next) !== 'undefined'
+    a(href=relative('/')) Back to Sanity
+    span: &bull;
+    a#post-index(href=relative('/posts')) Blog Index
+    span#pagination
+        if hasPrev
+            a#post-prev(href=relative(previous.path)) &lt; Prev
+        if hasPrev && hasNext
+            span &bull;
+        if hasNext
+            a#post-next(href=relative(next.path)) Next &gt;
+    article
+        h2.post-title= title
+        .post-meta
+            time= moment(date).format(postDateFormat)
+        div!= contents

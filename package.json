@@ -1,0 +1,21 @@
+{
+    "name": "eddie.ringle.io",
+    "private": true,
+    "dependencies": {
+        "jade": "1.9.x",
+        "metalsmith": "1.x",
+        "metalsmith-assets": "0.1.x",
+        "metalsmith-better-excerpts": "0.1.x",
+        "metalsmith-collections": "0.6.x",
+        "metalsmith-drafts": "0.0.x",
+        "metalsmith-feed": "0.0.x",
+        "metalsmith-markdown": "0.2.x",
+        "metalsmith-metallic": "0.3.x",
+        "metalsmith-paginate": "0.3.x",
+        "metalsmith-paths": "0.0.x",
+        "metalsmith-permalinks": "0.4.x",
+        "metalsmith-relative": "1.0.x",
+        "metalsmith-templates": "0.6.x",
+        "moment": "2.9.x"
+    }
+}

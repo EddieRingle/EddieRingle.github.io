@@ -1,0 +1,24 @@
+extends ./layout.jade
+
+prepend head
+    title Index | #{site.title}
+    
+mixin postItem(post)
+    li.post
+        h4.entry-title
+            a(rel='bookmark' href=relative(post.path)) #{post.title}
+
+append body
+    a#post-index(href=relative('/')) Back to Sanity
+    article
+        h2 Index
+        - var i = 0
+        - var lastDate = false
+        each post in collections.posts
+            if (i === 0 || !moment(lastDate).isSame(post.date, 'day'))
+                | </ul>
+                h3.post-date-header= moment(post.date).format('MMMM D, YYYY')
+                | <ul>    
+            - lastDate = post.date
+            - i += 1
+            +postItem(post)

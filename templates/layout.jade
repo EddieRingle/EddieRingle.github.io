@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        block head
+            meta(name='description' content=site.tagline)
+            meta(name='viewport', content='width=device-width, initial-scale=1')
+            link(rel='stylesheet' href=relative('/assets/style.css'))
+            link(rel='stylesheet' href=relative('/assets/hljs.github.css'))
+    body
+        block header
+            header
+                h1 #{site.title}
+                span #{site.tagline}
+                nav
+                    ul
+                        li: a(href='mailto:eddie@ringle.io') email
+                        li: a(href='http://github.com/eddieringle') github
+                        li: a(href='http://twitter.com/eddieringle') twitter
+        #content
+            section
+                block body
+        block footer
+            include footer.jade

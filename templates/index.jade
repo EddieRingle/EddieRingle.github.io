@@ -1,0 +1,8 @@
+extends ./layout.jade
+
+prepend head
+    title= site.title
+    
+append body
+    a#post-index(href=relative('/posts/')) Blog Index
+    article!=contents

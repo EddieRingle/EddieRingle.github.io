@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgba(68, 102, 85, 0.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab", "Georgia", serif;
+}
+
+header {
+    width: 100%;
+    color: #465;
+    position: relative;
+}
+
+header h1 {
+    font-weight: normal;
+    text-transform: lowercase;
+    padding: 8px 16px;
+}
+
+header span {
+    font-style: italic;
+    display: block;
+    padding: 8px 16px;
+}
+
+header nav {
+    float: right;
+    clear: both;
+    padding: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    line-height: 1.6em;
+}
+
+a {
+    color: #465;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#content {
+    width: 100%;
+    padding: 16px;
+}
+
+#content section {
+    width: 100%;
+    padding: 16px;
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.28);
+    background-color: #fff;
+    border-radius: 2px;
+    position: relative;
+}
+
+h3.post-date-header {
+    padding-bottom: 4px;
+}
+
+li.post {
+    margin-left: 8px;
+    line-height: 1.5em;
+}
+
+a#post-index {
+    text-align: center;
+}
+
+#content section>span:nth-of-type(1) {
+    padding: 0 4px;
+}
+
+span#pagination {
+    position: absolute;
+    right: 16px;
+}
+
+span#pagination span {
+    padding: 0 4px;
+    color: #465;
+}
+
+a#post-prev {
+}
+
+a#post-next {
+}
+
+.post-meta {
+    padding-bottom: 16px;
+}
+
+article {
+    width: 100%;
+}
+
+article h2 {
+    padding: 8px 0;
+}
+
+article p {
+    margin: 16px 0;
+    line-height: 1.5em;
+}
+
+article code {
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.28);
+    overflow-x: scroll;
+}
+
+article .bigblock code {
+    position: relative;
+    width: 100%;
+    min-width: 80vw;
+}
+
+article ul {
+    margin-left: 1em;
+}
+
+footer {
+    font-size: small;
+    color: rgba(0, 0, 0, 0.28);
+    padding: 8px;
+    text-align: center;
+}
+
+@media (min-width: 605px) {
+    header {
+        width: 580px;
+    }
+    header h1 {
+        text-align: left;
+    }
+    header span {
+        text-align: left;
+    }
+    #content {
+        width: 580px;
+    }
+    article {
+
+    }
+    footer {
+        width: 580px;
+    }
+}
+
+@media (min-width: 1000px) {
+    article .bigblock code {
+        max-width: 800px;
+        min-width: 800px;
+    }
+}
