@@ -1,1 +1,1 @@
-coffee metalsmith.coffee && git subtree push --prefix build origin master
+git subtree push --prefix build origin master
